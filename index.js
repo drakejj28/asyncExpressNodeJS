@@ -5,7 +5,58 @@ const app = express();
 app.use(express.json());
 
 // variable for the mock database
-let mockDatabase = [];
+let mockDatabase = [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john.doe@example.com"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com"
+    },
+    {
+      "id": 3,
+      "name": "Alice Johnson",
+      "email": "alice.johnson@example.com"
+    },
+    {
+      "id": 4,
+      "name": "Bob Brown",
+      "email": "bob.brown@example.com"
+    },
+    {
+      "id": 5,
+      "name": "Charlie White",
+      "email": "charlie.white@example.com"
+    },
+    {
+      "id": 6,
+      "name": "David Green",
+      "email": "david.green@example.com"
+    },
+    {
+      "id": 7,
+      "name": "Emily Black",
+      "email": "emily.black@example.com"
+    },
+    {
+      "id": 8,
+      "name": "Frank Red",
+      "email": "frank.red@example.com"
+    },
+    {
+      "id": 9,
+      "name": "Grace Blue",
+      "email": "grace.blue@example.com"
+    },
+    {
+      "id": 10,
+      "name": "Hannah Yellow",
+      "email": "hannah.yellow@example.com"
+    }
+  ];  
 
 // GET endpoint to get all data
 app.get('/api/data', (req, res) => {
